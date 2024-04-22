@@ -23,7 +23,10 @@ int visinaDrevesa(int n, int *a, int *b, int vozlisce){
     int vejaA = 1 + visinaDrevesa(n, a, b, a[novaIndex]);
     int vejaB = 1 + visinaDrevesa(n, a, b, b[novbIndex]);
 
-    if(vejaA > vejaB) ? vejaA : vejaB;
+    if(vejaA > vejaB){
+        return vejaA;
+    }
+    return vejaB;
 }
 
 int main(){
